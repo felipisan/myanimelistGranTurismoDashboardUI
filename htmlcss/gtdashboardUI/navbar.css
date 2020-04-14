@@ -1,0 +1,26 @@
+#content #first-half, #content #second-half{
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;    
+    display: -ms-flexbox; 
+    display: -webkit-flex;  
+    flex: 1;
+}
+
+#content #first-half #logo{
+    flex: 1;
+    order: 1;
+}
+
+#content #first-half #animeLists{
+    display: flex;
+    flex: 15;
+    order: 2;
+}
+
+#content #first-half #logo #imgLogo{
+    height: 100%;
+    width: 76px;
+    justify-self: center;
+    filter:drop-shadow(5px 5px 7px #333)
+}

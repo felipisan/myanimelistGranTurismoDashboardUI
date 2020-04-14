@@ -1,0 +1,38 @@
+Flexbox
+1º -> ist default
+
+----------------------------------------------------------------------
+
+Propriedades do Flexbox container
+
+* direction: row, row-reverse, column, column-reverse
+
+* flex-wrap: nowrap, wrap, wrap-reverse
+
+* flow: shorthand para flex-direction e flex-wrap
+
+* justify-content (main-axis): flex-start, flex-end, center, space-between, space-around e space-evenly
+
+* align-items (cross-axis): stretch, flex-start, flex-end, center e baseline (é a linha de onde o texto do elemento começa)
+
+*align-content (alinhamento quando há mais de uma linha, ou seja, wrap obrigatório. Se não tem, pula e tchau): flex-start, flex-end, center, stretch, space-between e space-around.
+
+----------------------------------------------------------------------
+
+IMPORTANTE! shorthand flex:::: flex-grow > flex-shrink | flex-basis 
+
+Propriedades dos flex items
+
+* order: força a alteração de ordem por algum motivo obscuro
+
+* align-self: override no align-items para o elemento (não pode usar margin auto):  stretch, flex-start, flex-end, center e baseline
+
+* grow: multiplica o tamanho com relação aos outros items (default = 1). Se colocar flex: 5, o item terá 5x o tamanho dos outros items.
+
+* shrink: divide o tamanho com relação aos outros items.
+
+
+
+
+
+

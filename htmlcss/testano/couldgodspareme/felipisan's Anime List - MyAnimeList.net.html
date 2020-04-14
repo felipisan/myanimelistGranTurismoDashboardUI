@@ -1,0 +1,2553 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="referrer" content="default">
+  <style type="text/css">
+                  
+/*
+// Self-explanatory
+*/
+BODY
+{
+margin: 0;
+color: #000000;
+font-size: 11.00px;
+font-family: Verdana, Arial;
+background-color: #FFFFFF;
+}
+
+/*
+// Determines the positioning of your list
+*/
+
+#list_surround
+{
+margin: 0 auto;
+width: 920px;
+}
+
+/*
+// All links on your list
+*/
+
+a
+{
+color: #51819f;
+text-decoration: none;
+}
+
+a:visited
+{
+color: #51819f;
+text-decoration: none;
+}
+
+a:hover
+{
+color: #51819f;
+text-decoration: underline;
+}
+
+/*
+// Alternating row color 1
+*/
+
+.td1
+{
+
+color: #000000;
+border-width: 0px 1px 1px 0px;
+border-style: solid;
+border-color: #ABABAB;
+padding: 2px;
+background-color: #FFFFFF;
+}
+
+/*
+// Alternating row color 2
+*/
+
+.td2
+{
+
+color: #000000;
+border-width: 0px 1px 1px 0px;
+border-style: solid;
+border-color: #ABABAB;
+padding: 2px;
+background-color: #F1F1F1;
+}
+
+/*
+// This represents the "Anime Title", "Score", "# Eps" columns
+*/
+
+.table_header
+{
+
+color: #000000;
+border-width: 1px 1px 1px 0px;
+border-style: solid;
+border-color: #ABABAB;
+background-color: #E7F1F7;
+padding: 2px;
+}
+
+/*
+// headerLink represents the color of the links inside the table_header
+*/
+
+.table_headerLink
+{
+
+}
+
+.table_headerLink:Visited
+{
+
+}
+
+.table_headerLink:Hover
+{
+}
+
+/*
+// Controls the select form decoration (the drop down select box)
+*/
+
+.form
+{
+border-width: 1px 1px 1px 1px;
+border-color: #ABABAB;
+border-style: solid;
+color: #000000;
+padding: 2px;
+font-size: 11.00px;
+font-family: Verdana, Arial;
+}
+
+
+/* Which 'status' up top is selected? */
+
+.status_selected
+{
+
+	color: #000000;
+	border-width: 0px 1px 1px 0px;
+    border-style: solid;
+    border-color: #ABABAB;
+    padding: 2px;
+    background-color: #FFFFFF;
+	}
+
+.status_not_selected
+{
+
+	color: #000000;
+	border-width: 0px 1px 1px 0px;
+    border-style: solid;
+    border-color: #ABABAB;
+    padding: 2px;
+    background-color: #F1F1F1;
+	}
+
+/*
+Header classes for Currently Watching, Completed, Dropped, etc...
+*/
+
+.header_cw
+{
+
+}
+
+.header_completed
+{
+
+}
+
+.header_onhold
+{
+
+}
+
+.header_dropped
+{
+
+}
+
+.header_ptw
+{
+
+}
+
+.header_title {
+font-size: 14px;
+font-weight: bold;
+}
+
+
+.category_totals
+{
+
+}
+
+#grand_totals
+{
+text-align: center;
+}
+
+/* header_al is the div surrounding "User's Anime List" at the top */
+
+.header_al
+{
+font-weight: bold;
+font-size: 16px;
+}
+
+/* header_al_links is the div with your "Profile" and "MyAnimeList home" links */
+.header_al_links
+{
+
+}
+
+/* controls what styles you can give to all the anime titles in your list */
+.animetitle
+{
+font-weight: bold;
+}
+
+/*
+copyright contains the "Producted by Garrett Gyssler" text
+DO NOT REMOVE OR HIDE THIS DIV
+IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
+*/
+
+#copyright
+{
+padding-top: 6px;
+text-align: center;
+margin: 0 auto;
+width: 920px;
+}
+
+
+      </style>
+  
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin="anonymous">
+<link rel="preconnect" href="https://tags-cdn.deployads.com/" crossorigin="anonymous">
+<link rel="preconnect" href="https://www.googletagservices.com/" crossorigin="anonymous">
+<link rel="preconnect" href="https://www.googletagmanager.com/" crossorigin="anonymous">
+<link rel="preconnect" href="https://apis.google.com/" crossorigin="anonymous">
+<link rel="preconnect" href="https://pixel-sync.sitescout.com/" crossorigin="anonymous">
+<link rel="preconnect" href="https://pixel.tapad.com/" crossorigin="anonymous">
+<link rel="preconnect" href="https://c.deployads.com/" crossorigin="anonymous">
+<link rel="preconnect" href="https://cdn.myanimelist.net/" crossorigin="anonymous">
+
+
+<title>
+felipisan's Anime List - MyAnimeList.net
+</title>
+
+
+  
+<meta name="keywords" content="anime, myanimelist, anime news, manga">
+<link rel="canonical" href="https://myanimelist.net/animelist/felipisan">  
+<meta property="og:locale" content="en_US"><meta property="fb:app_id" content="360769957454434"><meta property="og:site_name" content="MyAnimeList.net"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@myanimelist"><meta property="og:title" content=" felipisan's Anime List - MyAnimeList.net "><meta property="og:image" content="https://cdn.myanimelist.net/img/sp/icon/apple-touch-icon-256.png"><meta name="twitter:image:src" content="https://cdn.myanimelist.net/img/sp/icon/apple-touch-icon-256.png"><meta property="og:url" content="https://myanimelist.net/animelist/felipisan">
+
+<meta name="referrer" content="default"><link rel="manifest" href="https://myanimelist.net/manifest.json">
+
+<meta name="csrf_token" content="387793224f4153c88752204dd1287a0abe394b93"><meta name="viewport" content="initial-scale=1">  <link rel="preload" as="style" href="felipisan's%20Anime%20List%20-%20MyAnimeList.net_arquivos/list.css">
+<link rel="preload" as="style" href="felipisan's%20Anime%20List%20-%20MyAnimeList.net_arquivos/style-849f14639f.css">
+<link rel="preload" as="script" href="felipisan's%20Anime%20List%20-%20MyAnimeList.net_arquivos/header-eac2c15c13.js">
+<link rel="preload" as="script" href="felipisan's%20Anime%20List%20-%20MyAnimeList.net_arquivos/all-f6eb43d6a3.js">
+<link rel="preload" as="script" href="felipisan's%20Anime%20List%20-%20MyAnimeList.net_arquivos/dimension.html">
+<link rel="preload" as="script" href="felipisan's%20Anime%20List%20-%20MyAnimeList.net_arquivos/list.js">
+
+  <link rel="stylesheet" href="felipisan's%20Anime%20List%20-%20MyAnimeList.net_arquivos/list.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="felipisan's%20Anime%20List%20-%20MyAnimeList.net_arquivos/style-849f14639f.css">
+
+<script type="text/javascript" src="felipisan's%20Anime%20List%20-%20MyAnimeList.net_arquivos/all-f6eb43d6a3.js" id="alljs" data-params="{&quot;origin_url&quot;:&quot;https:\/\/myanimelist.net&quot;,&quot;is_request_bot_filter_log&quot;:false}" async="async"></script>
+
+
+<script type="text/javascript" src="felipisan's%20Anime%20List%20-%20MyAnimeList.net_arquivos/dimension.html"></script>
+<script type="text/javascript" src="felipisan's%20Anime%20List%20-%20MyAnimeList.net_arquivos/list.js"></script>
+
+<link rel="search" type="application/opensearchdescription+xml" href="https://myanimelist.net/plugins/myanimelist.xml" title="MyAnimeList">
+
+<link rel="shortcut icon" href="https://cdn.myanimelist.net/images/faviconv5.ico">
+
+<link href="felipisan's%20Anime%20List%20-%20MyAnimeList.net_arquivos/css.css" rel="stylesheet"></head>
+
+<body class="ownlist " data-owner="1" data-country-code="BR">
+
+
+    <table id="mal_control_strip" cellspacing="0" cellpadding="0" border="0">
+    <tbody><tr>
+                      <td id="mal_cs_listinfo">
+          <div>
+            <strong>
+              <a href="https://myanimelist.net/profile/felipisan">
+                <strong>felipisan</strong>
+              </a>
+            </strong>
+          </div>
+          <div>
+            <form action="https://myanimelist.net/logout.php" method="post">
+  <a href="javascript:void(0);" onclick="$(this).parent().submit();" class="logout">
+    Logout
+  </a>
+</form>
+          </div>
+        </td>
+        <td id="mal_cs_links">
+          <div>
+            <a href="https://myanimelist.net/addtolist.php?hidenav=1" class="List_LightBox">Add to List</a>
+            <a href="https://myanimelist.net/">Home</a>
+          </div>
+          <div>
+            <a href="https://myanimelist.net/animelist/felipisan">Anime List</a>
+            <a href="https://myanimelist.net/mangalist/felipisan">Manga List</a>
+          </div>
+        </td>
+        <td id="mal_cs_otherlinks">
+                      <div>
+              <strong>
+                You are viewing your anime list
+              </strong>
+            </div>
+            <div>
+              <a href="https://myanimelist.net/history/felipisan">History</a>
+              <a href="https://myanimelist.net/forum/">Forum</a>
+              <a href="https://myanimelist.net/panel.php?go=export">Export</a>
+            </div>
+                  </td>
+            <td id="mal_cs_powered" valign="top" align="right">
+        <a href="https://myanimelist.net/"><img class=" lazyloaded" data-src="https://cdn.myanimelist.net/images/list-top-powered.gif" src="felipisan's%20Anime%20List%20-%20MyAnimeList.net_arquivos/list-top-powered.gif"></a>
+        <div id="search">
+          <input id="searchBox" value="Search" type="textbox">
+          <img class=" lazyloaded" data-src="https://cdn.myanimelist.net/images/magnify.gif" id="searchListButton" src="felipisan's%20Anime%20List%20-%20MyAnimeList.net_arquivos/magnify.gif">
+          <input type="hidden" id="listUserId" value="5957123">
+          <input type="hidden" id="listUserName" value="felipisan">
+          <input type="hidden" id="listType" value="anime">
+        </div>
+      </td>
+    </tr>
+  </tbody></table>
+
+    <div id="list_surround">
+    <br>
+
+          
+<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+  <tbody><tr>
+    <td class="status_not_selected" style="border-width: 1px 1px 1px 1px;" width="165" nowrap="nowrap" align="center">
+      <a href="https://myanimelist.net/animelist/felipisan?status=1&amp;tag=" title="3 Entries">
+        Currently Watching
+      </a>
+    </td>
+    <td class="status_selected" style="border-width: 1px 1px 1px 0;" width="75" align="center">
+      <a href="https://myanimelist.net/animelist/felipisan?status=2&amp;tag=" title="32 Entries">
+        Completed
+      </a>
+    </td>
+    <td class="status_not_selected" style="border-width: 1px 1px 1px 0;" width="75" align="center">
+      <a href="https://myanimelist.net/animelist/felipisan?status=3&amp;tag=" title="0 Entries">
+        On Hold
+      </a>
+    </td>
+    <td class="status_not_selected" style="border-width: 1px 1px 1px 0;" width="75" align="center">
+      <a href="https://myanimelist.net/animelist/felipisan?status=4&amp;tag=" title="8 Entries">
+        Dropped
+      </a>
+    </td>
+    <td class="status_not_selected" style="border-width: 1px 1px 1px 0;" width="115" align="center">
+      <a href="https://myanimelist.net/animelist/felipisan?status=6&amp;tag=" title="15 Entries">
+        Plan to Watch
+      </a>
+    </td>
+    <td class="status_not_selected" style="border-width: 1px 1px 1px 0;" width="115" align="center">
+      <a href="https://myanimelist.net/animelist/felipisan?status=7&amp;tag=" title="Show All Entries">
+        All Anime
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+    
+    <br><br>
+
+    
+              
+
+
+
+                <table class="header_completed" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+      <tbody><tr>
+        <td>
+          <div class="header_title">
+            <span>Completed</span>
+          </div>
+        </td>
+      </tr>
+    </tbody></table>
+
+    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+      <tbody><tr>
+                          <td class="table_header" style="border-width: 1px 1px 1px 1px;" width="30" align="center">
+            <b><span class="table_headerLink">#</span></b>
+          </td>
+        
+                        <td class="table_header">
+                <a href="https://myanimelist.net/animelist/felipisan?status=2&amp;order=1&amp;tag=" class="table_headerLink">
+            <strong>Anime Title</strong>
+          </a>
+        </td>
+
+                          <td class="table_header" width="45" align="center">
+            <strong>
+              <a href="https://myanimelist.net/animelist/felipisan?status=2&amp;order=4&amp;tag=" class="table_headerLink" rel="#infoscore">Score</a>
+            </strong>
+            <div id="infoscore" style="display: none;">
+              10 - Masterpiece<br>
+              9 - Great<br>
+              8 - Very Good<br>
+              7 - Good<br>
+              6 - Fine<br>
+              5 - Average<br>
+              4 - Bad<br>
+              3 - Very Bad<br>
+              2 - Horrible<br>
+              1 - Appalling
+            </div>
+          </td>
+        
+                          <td class="table_header" width="50" nowrap="nowrap" align="center">
+            <strong>
+              <a href="https://myanimelist.net/animelist/felipisan?status=2&amp;order=6&amp;tag=" class="table_headerLink" rel="#infotype">Type</a>
+            </strong>
+            <div id="infotype" style="display: none;">
+              TV (Television Series)<br>
+              Movie<br>
+              OVA (Original Video Animation)
+            </div>
+          </td>
+        
+                          <td class="table_header" width="70" nowrap="nowrap" align="center">
+            <strong>
+              <a href="https://myanimelist.net/animelist/felipisan?status=2&amp;order=12&amp;tag=" class="table_headerLink">Progress</a>
+            </strong>
+          </td>
+        
+                          <td class="table_header" width="125" nowrap="nowrap" align="center">
+            <strong>
+              Tags
+                          </strong>
+          </td>
+        
+                
+                
+                
+                
+                      </tr>
+    </tbody></table>
+
+                
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td1" style="border-left-width: 1px;" width="30" align="center">
+              1
+            </td>
+          
+                              <td class="td1" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/47/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu47" onclick="getExpand(47, 1);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/47/Akira" target="_blank" class="animetitle" title="Anime Information">
+              <span>Akira</span>
+            </a>
+                                  </td>
+
+                                <td class="td1" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(47);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval47">
+                  7
+                </span>
+                </a>
+                <div id="scorediv47" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,47);" id="scoretext47" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(47);">
+                </div>
+                          </td>
+          
+                                <td class="td1" width="50" align="center">
+              Movie
+            </td>
+          
+                                <td class="td1" width="70" align="center">
+                                                          1
+                          </td>
+          
+                                <td class="td1" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow47">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(47, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit47"></div>
+                            <span id="tagLinks47"></span>
+              <span id="tagRow47" style="display: none;"></span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more47" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td2" style="border-left-width: 1px;" width="30" align="center">
+              2
+            </td>
+          
+                              <td class="td2" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/11111/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu11111" onclick="getExpand(11111, 2);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/11111/Another" target="_blank" class="animetitle" title="Anime Information">
+              <span>Another</span>
+            </a>
+                                  </td>
+
+                                <td class="td2" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(11111);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval11111">
+                  2
+                </span>
+                </a>
+                <div id="scorediv11111" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,11111);" id="scoretext11111" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(11111);">
+                </div>
+                          </td>
+          
+                                <td class="td2" width="50" align="center">
+              TV
+            </td>
+          
+                                <td class="td2" width="70" align="center">
+                                                          12
+                          </td>
+          
+                                <td class="td2" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow11111">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(11111, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit11111"></div>
+                            <span id="tagLinks11111">                  <a href="https://myanimelist.net/animelist/felipisan?status=2&amp;tag=Meu+primeiro+anime.">Meu primeiro anime.</a></span>
+              <span id="tagRow11111" style="display: none;">Meu primeiro anime.</span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more11111" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td1" style="border-left-width: 1px;" width="30" align="center">
+              3
+            </td>
+          
+                              <td class="td1" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/5081/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu5081" onclick="getExpand(5081, 1);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/5081/Bakemonogatari" target="_blank" class="animetitle" title="Anime Information">
+              <span>Bakemonogatari</span>
+            </a>
+                                  </td>
+
+                                <td class="td1" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(5081);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval5081">
+                  7
+                </span>
+                </a>
+                <div id="scorediv5081" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,5081);" id="scoretext5081" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(5081);">
+                </div>
+                          </td>
+          
+                                <td class="td1" width="50" align="center">
+              TV
+            </td>
+          
+                                <td class="td1" width="70" align="center">
+                                                          15
+                          </td>
+          
+                                <td class="td1" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow5081">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(5081, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit5081"></div>
+                            <span id="tagLinks5081">                  <a href="https://myanimelist.net/animelist/felipisan?status=2&amp;tag=Um+ecchi+har%C3%A9m+que+n%C3%A3o+me+deu+vontade+de+vomitar.">Um ecchi harém que não me deu vontade de vomitar.</a></span>
+              <span id="tagRow5081" style="display: none;">Um ecchi harém que não me deu vontade de vomitar.</span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more5081" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td2" style="border-left-width: 1px;" width="30" align="center">
+              4
+            </td>
+          
+                              <td class="td2" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/369/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu369" onclick="getExpand(369, 2);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/369/Boogiepop_wa_Warawanai" target="_blank" class="animetitle" title="Anime Information">
+              <span>Boogiepop wa Warawanai</span>
+            </a>
+                                  </td>
+
+                                <td class="td2" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(369);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval369">
+                  10
+                </span>
+                </a>
+                <div id="scorediv369" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,369);" id="scoretext369" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(369);">
+                </div>
+                          </td>
+          
+                                <td class="td2" width="50" align="center">
+              TV
+            </td>
+          
+                                <td class="td2" width="70" align="center">
+                                                          12
+                          </td>
+          
+                                <td class="td2" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow369">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(369, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit369"></div>
+                            <span id="tagLinks369">                  <a href="https://myanimelist.net/animelist/felipisan?status=2&amp;tag=Um+quebra-cabe%C3%A7as+gigante+feito+para+te+desafiar.+Soundtrack+e+ambienta%C3%A7%C3%A3o+impec%C3%A1veis.+Also">Um quebra-cabeças gigante feito para te desafiar. Soundtrack e ambientação impecáveis. Also</a>,                   <a href="https://myanimelist.net/animelist/felipisan?status=2&amp;tag=inovaram+bastante+no+Storytelling+coletivo">inovaram bastante no Storytelling coletivo</a>,                   <a href="https://myanimelist.net/animelist/felipisan?status=2&amp;tag=em+que+cada+personagem+contribui+um+pouquinho+para+a+trama+central+da+Kirima+e+a+Boogie.">em que cada personagem contribui um pouquinho para a trama central da Kirima e a Boogie.</a></span>
+              <span id="tagRow369" style="display: none;">Um 
+quebra-cabeças gigante feito para te desafiar. Soundtrack e ambientação 
+impecáveis. Also, inovaram bastante no Storytelling coletivo, em que 
+cada personagem contribui um pouquinho para a trama central da Kirima e a
+ Boogie. </span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more369" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td1" style="border-left-width: 1px;" width="30" align="center">
+              5
+            </td>
+          
+                              <td class="td1" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/11843/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu11843" onclick="getExpand(11843, 1);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/11843/Danshi_Koukousei_no_Nichijou" target="_blank" class="animetitle" title="Anime Information">
+              <span>Danshi Koukousei no Nichijou</span>
+            </a>
+                                  </td>
+
+                                <td class="td1" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(11843);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval11843">
+                  9
+                </span>
+                </a>
+                <div id="scorediv11843" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,11843);" id="scoretext11843" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(11843);">
+                </div>
+                          </td>
+          
+                                <td class="td1" width="50" align="center">
+              TV
+            </td>
+          
+                                <td class="td1" width="70" align="center">
+                                                          12
+                          </td>
+          
+                                <td class="td1" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow11843">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(11843, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit11843"></div>
+                            <span id="tagLinks11843"></span>
+              <span id="tagRow11843" style="display: none;"></span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more11843" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td2" style="border-left-width: 1px;" width="30" align="center">
+              6
+            </td>
+          
+                              <td class="td2" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/1535/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu1535" onclick="getExpand(1535, 2);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/1535/Death_Note" target="_blank" class="animetitle" title="Anime Information">
+              <span>Death Note</span>
+            </a>
+                                  </td>
+
+                                <td class="td2" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(1535);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval1535">
+                  8
+                </span>
+                </a>
+                <div id="scorediv1535" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,1535);" id="scoretext1535" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(1535);">
+                </div>
+                          </td>
+          
+                                <td class="td2" width="50" align="center">
+              TV
+            </td>
+          
+                                <td class="td2" width="70" align="center">
+                                                          37
+                          </td>
+          
+                                <td class="td2" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow1535">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(1535, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit1535"></div>
+                            <span id="tagLinks1535"></span>
+              <span id="tagRow1535" style="display: none;"></span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more1535" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td1" style="border-left-width: 1px;" width="30" align="center">
+              7
+            </td>
+          
+                              <td class="td1" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/10087/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu10087" onclick="getExpand(10087, 1);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/10087/Fate_Zero" target="_blank" class="animetitle" title="Anime Information">
+              <span>Fate/Zero</span>
+            </a>
+                                  </td>
+
+                                <td class="td1" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(10087);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval10087">
+                  10
+                </span>
+                </a>
+                <div id="scorediv10087" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,10087);" id="scoretext10087" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(10087);">
+                </div>
+                          </td>
+          
+                                <td class="td1" width="50" align="center">
+              TV
+            </td>
+          
+                                <td class="td1" width="70" align="center">
+                                                          13
+                          </td>
+          
+                                <td class="td1" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow10087">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(10087, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit10087"></div>
+                            <span id="tagLinks10087">                  <a href="https://myanimelist.net/animelist/felipisan?status=2&amp;tag=Tirando+uns+tr%C3%AAs+ou+quatro+di%C3%A1logos+pregui%C3%A7osos">Tirando uns três ou quatro diálogos preguiçosos</a>,                   <a href="https://myanimelist.net/animelist/felipisan?status=2&amp;tag=%C3%A9+uma+masterpiece+e+ponto.">é uma masterpiece e ponto.</a></span>
+              <span id="tagRow10087" style="display: none;">Tirando uns três ou quatro diálogos preguiçosos, é uma masterpiece e ponto. </span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more10087" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td2" style="border-left-width: 1px;" width="30" align="center">
+              8
+            </td>
+          
+                              <td class="td2" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/11741/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu11741" onclick="getExpand(11741, 2);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/11741/Fate_Zero_2nd_Season" target="_blank" class="animetitle" title="Anime Information">
+              <span>Fate/Zero 2nd Season</span>
+            </a>
+                                  </td>
+
+                                <td class="td2" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(11741);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval11741">
+                  9
+                </span>
+                </a>
+                <div id="scorediv11741" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,11741);" id="scoretext11741" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(11741);">
+                </div>
+                          </td>
+          
+                                <td class="td2" width="50" align="center">
+              TV
+            </td>
+          
+                                <td class="td2" width="70" align="center">
+                                                          12
+                          </td>
+          
+                                <td class="td2" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow11741">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(11741, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit11741"></div>
+                            <span id="tagLinks11741">                  <a href="https://myanimelist.net/animelist/felipisan?status=2&amp;tag=Aqui+come%C3%A7am+uns+probleminhas+do+anime.+A+qualidade+da+trama+deca%C3%AD+um+pouco">Aqui começam uns probleminhas do anime. A qualidade da trama decaí um pouco</a>,                   <a href="https://myanimelist.net/animelist/felipisan?status=2&amp;tag=alguns+personagens+tem+motiva%C3%A7%C3%B5es+idiotas+ao+cubo+que+s%C3%B3+serviram+pra+deixar+claro+que+eles+n%C3%A3o+iriam+conseguir+o+Graal.">alguns personagens tem motivações idiotas ao cubo que só serviram pra deixar claro que eles não iriam conseguir o Graal.</a></span>
+              <span id="tagRow11741" style="display: none;">Aqui começam
+ uns probleminhas do anime. A qualidade da trama decaí um pouco, alguns 
+personagens tem motivações idiotas ao cubo que só serviram pra deixar 
+claro que eles não iriam conseguir o Graal.</span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more11741" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td1" style="border-left-width: 1px;" width="30" align="center">
+              9
+            </td>
+          
+                              <td class="td1" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/227/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu227" onclick="getExpand(227, 1);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/227/FLCL" target="_blank" class="animetitle" title="Anime Information">
+              <span>FLCL</span>
+            </a>
+                                  </td>
+
+                                <td class="td1" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(227);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval227">
+                  4
+                </span>
+                </a>
+                <div id="scorediv227" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,227);" id="scoretext227" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(227);">
+                </div>
+                          </td>
+          
+                                <td class="td1" width="50" align="center">
+              OVA
+            </td>
+          
+                                <td class="td1" width="70" align="center">
+                                                          6
+                          </td>
+          
+                                <td class="td1" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow227">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(227, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit227"></div>
+                            <span id="tagLinks227">                  <a href="https://myanimelist.net/animelist/felipisan?status=2&amp;tag=Muito+chato">Muito chato</a>,                   <a href="https://myanimelist.net/animelist/felipisan?status=2&amp;tag=mano.+E+%C3%A9+fumado">mano. E é fumado</a>,                   <a href="https://myanimelist.net/animelist/felipisan?status=2&amp;tag=%C3%A0s+vezes+n%C3%A3o+d%C3%A1+pra+entender.">às vezes não dá pra entender.</a></span>
+              <span id="tagRow227" style="display: none;">Muito chato, mano. E é fumado, às vezes não dá pra entender.</span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more227" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td2" style="border-left-width: 1px;" width="30" align="center">
+              10
+            </td>
+          
+                              <td class="td2" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/20583/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu20583" onclick="getExpand(20583, 2);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/20583/Haikyuu" target="_blank" class="animetitle" title="Anime Information">
+              <span>Haikyuu!!</span>
+            </a>
+                                  </td>
+
+                                <td class="td2" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(20583);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval20583">
+                  7
+                </span>
+                </a>
+                <div id="scorediv20583" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,20583);" id="scoretext20583" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(20583);">
+                </div>
+                          </td>
+          
+                                <td class="td2" width="50" align="center">
+              TV
+            </td>
+          
+                                <td class="td2" width="70" align="center">
+                                                          25
+                          </td>
+          
+                                <td class="td2" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow20583">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(20583, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit20583"></div>
+                            <span id="tagLinks20583"></span>
+              <span id="tagRow20583" style="display: none;"></span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more20583" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td1" style="border-left-width: 1px;" width="30" align="center">
+              11
+            </td>
+          
+                              <td class="td1" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/934/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu934" onclick="getExpand(934, 1);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/934/Higurashi_no_Naku_Koro_ni" target="_blank" class="animetitle" title="Anime Information">
+              <span>Higurashi no Naku Koro ni</span>
+            </a>
+                                  </td>
+
+                                <td class="td1" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(934);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval934">
+                  5
+                </span>
+                </a>
+                <div id="scorediv934" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,934);" id="scoretext934" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(934);">
+                </div>
+                          </td>
+          
+                                <td class="td1" width="50" align="center">
+              TV
+            </td>
+          
+                                <td class="td1" width="70" align="center">
+                                                          26
+                          </td>
+          
+                                <td class="td1" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow934">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(934, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit934"></div>
+                            <span id="tagLinks934"></span>
+              <span id="tagRow934" style="display: none;"></span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more934" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td2" style="border-left-width: 1px;" width="30" align="center">
+              12
+            </td>
+          
+                              <td class="td2" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/11061/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu11061" onclick="getExpand(11061, 2);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/11061/Hunter_x_Hunter_2011" target="_blank" class="animetitle" title="Anime Information">
+              <span>Hunter x Hunter (2011)</span>
+            </a>
+                                  </td>
+
+                                <td class="td2" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(11061);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval11061">
+                  8
+                </span>
+                </a>
+                <div id="scorediv11061" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,11061);" id="scoretext11061" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(11061);">
+                </div>
+                          </td>
+          
+                                <td class="td2" width="50" align="center">
+              TV
+            </td>
+          
+                                <td class="td2" width="70" align="center">
+                                                          148
+                          </td>
+          
+                                <td class="td2" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow11061">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(11061, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit11061"></div>
+                            <span id="tagLinks11061">                  <a href="https://myanimelist.net/animelist/felipisan?status=2&amp;tag=Eu+ainda+n%C3%A3o+sei+como+eu+segurei+148+epis%C3%B3dios+em+uma+semana.+Mas+os+arcos+3+e+5+s%C3%A3o+in%C3%BAteis.">Eu ainda não sei como eu segurei 148 episódios em uma semana. Mas os arcos 3 e 5 são inúteis.</a></span>
+              <span id="tagRow11061" style="display: none;">Eu ainda não sei como eu segurei 148 episódios em uma semana. Mas os arcos 3 e 5 são inúteis.</span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more11061" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td1" style="border-left-width: 1px;" width="30" align="center">
+              13
+            </td>
+          
+                              <td class="td1" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/33/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu33" onclick="getExpand(33, 1);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/33/Kenpuu_Denki_Berserk" target="_blank" class="animetitle" title="Anime Information">
+              <span>Kenpuu Denki Berserk</span>
+            </a>
+                                  </td>
+
+                                <td class="td1" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(33);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval33">
+                  6
+                </span>
+                </a>
+                <div id="scorediv33" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,33);" id="scoretext33" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(33);">
+                </div>
+                          </td>
+          
+                                <td class="td1" width="50" align="center">
+              TV
+            </td>
+          
+                                <td class="td1" width="70" align="center">
+                                                          25
+                          </td>
+          
+                                <td class="td1" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow33">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(33, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit33"></div>
+                            <span id="tagLinks33"></span>
+              <span id="tagRow33" style="display: none;"></span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more33" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td2" style="border-left-width: 1px;" width="30" align="center">
+              14
+            </td>
+          
+                              <td class="td2" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/18679/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu18679" onclick="getExpand(18679, 2);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/18679/Kill_la_Kill" target="_blank" class="animetitle" title="Anime Information">
+              <span>Kill la Kill</span>
+            </a>
+                                  </td>
+
+                                <td class="td2" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(18679);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval18679">
+                  8
+                </span>
+                </a>
+                <div id="scorediv18679" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,18679);" id="scoretext18679" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(18679);">
+                </div>
+                          </td>
+          
+                                <td class="td2" width="50" align="center">
+              TV
+            </td>
+          
+                                <td class="td2" width="70" align="center">
+                                                          24
+                          </td>
+          
+                                <td class="td2" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow18679">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(18679, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit18679"></div>
+                            <span id="tagLinks18679"></span>
+              <span id="tagRow18679" style="display: none;"></span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more18679" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td1" style="border-left-width: 1px;" width="30" align="center">
+              15
+            </td>
+          
+                              <td class="td1" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/30831/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu30831" onclick="getExpand(30831, 1);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/30831/Kono_Subarashii_Sekai_ni_Shukufuku_wo" target="_blank" class="animetitle" title="Anime Information">
+              <span>Kono Subarashii Sekai ni Shukufuku wo!</span>
+            </a>
+                                  </td>
+
+                                <td class="td1" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(30831);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval30831">
+                  6
+                </span>
+                </a>
+                <div id="scorediv30831" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,30831);" id="scoretext30831" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(30831);">
+                </div>
+                          </td>
+          
+                                <td class="td1" width="50" align="center">
+              TV
+            </td>
+          
+                                <td class="td1" width="70" align="center">
+                                                          10
+                          </td>
+          
+                                <td class="td1" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow30831">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(30831, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit30831"></div>
+                            <span id="tagLinks30831"></span>
+              <span id="tagRow30831" style="display: none;"></span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more30831" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td2" style="border-left-width: 1px;" width="30" align="center">
+              16
+            </td>
+          
+                              <td class="td2" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/8424/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu8424" onclick="getExpand(8424, 2);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/8424/MM" target="_blank" class="animetitle" title="Anime Information">
+              <span>MM!</span>
+            </a>
+                                  </td>
+
+                                <td class="td2" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(8424);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval8424">
+                  5
+                </span>
+                </a>
+                <div id="scorediv8424" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,8424);" id="scoretext8424" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(8424);">
+                </div>
+                          </td>
+          
+                                <td class="td2" width="50" align="center">
+              TV
+            </td>
+          
+                                <td class="td2" width="70" align="center">
+                                                          12
+                          </td>
+          
+                                <td class="td2" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow8424">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(8424, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit8424"></div>
+                            <span id="tagLinks8424">                  <a href="https://myanimelist.net/animelist/felipisan?status=2&amp;tag=Quando+voc%C3%AA+n%C3%A3o+sabe+se+o+show+t%C3%A1+tentando+ou+n%C3%A3o+ser+escrachado.">Quando você não sabe se o show tá tentando ou não ser escrachado.</a></span>
+              <span id="tagRow8424" style="display: none;">Quando você não sabe se o show tá tentando ou não ser escrachado. </span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more8424" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td1" style="border-left-width: 1px;" width="30" align="center">
+              17
+            </td>
+          
+                              <td class="td1" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/30/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu30" onclick="getExpand(30, 1);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/30/Neon_Genesis_Evangelion" target="_blank" class="animetitle" title="Anime Information">
+              <span>Neon Genesis Evangelion</span>
+            </a>
+                                  </td>
+
+                                <td class="td1" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(30);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval30">
+                  7
+                </span>
+                </a>
+                <div id="scorediv30" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,30);" id="scoretext30" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(30);">
+                </div>
+                          </td>
+          
+                                <td class="td1" width="50" align="center">
+              TV
+            </td>
+          
+                                <td class="td1" width="70" align="center">
+                                                          26
+                          </td>
+          
+                                <td class="td1" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow30">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(30, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit30"></div>
+                            <span id="tagLinks30"></span>
+              <span id="tagRow30" style="display: none;"></span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more30" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td2" style="border-left-width: 1px;" width="30" align="center">
+              18
+            </td>
+          
+                              <td class="td2" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/31/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu31" onclick="getExpand(31, 2);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/31/Neon_Genesis_Evangelion__Death___Rebirth" target="_blank" class="animetitle" title="Anime Information">
+              <span>Neon Genesis Evangelion: Death &amp; Rebirth</span>
+            </a>
+                                  </td>
+
+                                <td class="td2" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(31);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval31">
+                  3
+                </span>
+                </a>
+                <div id="scorediv31" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,31);" id="scoretext31" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(31);">
+                </div>
+                          </td>
+          
+                                <td class="td2" width="50" align="center">
+              Movie
+            </td>
+          
+                                <td class="td2" width="70" align="center">
+                                                          1
+                          </td>
+          
+                                <td class="td2" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow31">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(31, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit31"></div>
+                            <span id="tagLinks31">                  <a href="https://myanimelist.net/animelist/felipisan?status=2&amp;tag=PRA+QU%C3%8A%3F+N%C3%A3o+assistam.+%C3%89+s%C3%B3+uma+compila%C3%A7%C3%A3o+de+highlights.">PRA QUÊ? Não assistam. É só uma compilação de highlights.</a></span>
+              <span id="tagRow31" style="display: none;">PRA QUÊ? Não assistam. É só uma compilação de highlights.</span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more31" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td1" style="border-left-width: 1px;" width="30" align="center">
+              19
+            </td>
+          
+                              <td class="td1" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/32/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu32" onclick="getExpand(32, 1);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/32/Neon_Genesis_Evangelion__The_End_of_Evangelion" target="_blank" class="animetitle" title="Anime Information">
+              <span>Neon Genesis Evangelion: The End of Evangelion</span>
+            </a>
+                                  </td>
+
+                                <td class="td1" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(32);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval32">
+                  9
+                </span>
+                </a>
+                <div id="scorediv32" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,32);" id="scoretext32" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(32);">
+                </div>
+                          </td>
+          
+                                <td class="td1" width="50" align="center">
+              Movie
+            </td>
+          
+                                <td class="td1" width="70" align="center">
+                                                          1
+                          </td>
+          
+                                <td class="td1" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow32">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(32, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit32"></div>
+                            <span id="tagLinks32"></span>
+              <span id="tagRow32" style="display: none;"></span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more32" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td2" style="border-left-width: 1px;" width="30" align="center">
+              20
+            </td>
+          
+                              <td class="td2" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/1210/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu1210" onclick="getExpand(1210, 2);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/1210/NHK_ni_Youkoso" target="_blank" class="animetitle" title="Anime Information">
+              <span>NHK ni Youkoso!</span>
+            </a>
+                                  </td>
+
+                                <td class="td2" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(1210);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval1210">
+                  7
+                </span>
+                </a>
+                <div id="scorediv1210" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,1210);" id="scoretext1210" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(1210);">
+                </div>
+                          </td>
+          
+                                <td class="td2" width="50" align="center">
+              TV
+            </td>
+          
+                                <td class="td2" width="70" align="center">
+                                                          24
+                          </td>
+          
+                                <td class="td2" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow1210">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(1210, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit1210"></div>
+                            <span id="tagLinks1210"></span>
+              <span id="tagRow1210" style="display: none;"></span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more1210" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td1" style="border-left-width: 1px;" width="30" align="center">
+              21
+            </td>
+          
+                              <td class="td1" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/13601/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu13601" onclick="getExpand(13601, 1);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/13601/Psycho-Pass" target="_blank" class="animetitle" title="Anime Information">
+              <span>Psycho-Pass</span>
+            </a>
+                                  </td>
+
+                                <td class="td1" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(13601);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval13601">
+                  7
+                </span>
+                </a>
+                <div id="scorediv13601" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,13601);" id="scoretext13601" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(13601);">
+                </div>
+                          </td>
+          
+                                <td class="td1" width="50" align="center">
+              TV
+            </td>
+          
+                                <td class="td1" width="70" align="center">
+                                                          22
+                          </td>
+          
+                                <td class="td1" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow13601">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(13601, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit13601"></div>
+                            <span id="tagLinks13601"></span>
+              <span id="tagRow13601" style="display: none;"></span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more13601" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td2" style="border-left-width: 1px;" width="30" align="center">
+              22
+            </td>
+          
+                              <td class="td2" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/23281/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu23281" onclick="getExpand(23281, 2);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/23281/Psycho-Pass_2" target="_blank" class="animetitle" title="Anime Information">
+              <span>Psycho-Pass 2</span>
+            </a>
+                                  </td>
+
+                                <td class="td2" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(23281);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval23281">
+                  3
+                </span>
+                </a>
+                <div id="scorediv23281" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,23281);" id="scoretext23281" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(23281);">
+                </div>
+                          </td>
+          
+                                <td class="td2" width="50" align="center">
+              TV
+            </td>
+          
+                                <td class="td2" width="70" align="center">
+                                                          11
+                          </td>
+          
+                                <td class="td2" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow23281">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(23281, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit23281"></div>
+                            <span id="tagLinks23281"></span>
+              <span id="tagRow23281" style="display: none;"></span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more23281" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td1" style="border-left-width: 1px;" width="30" align="center">
+              23
+            </td>
+          
+                              <td class="td1" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/31240/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu31240" onclick="getExpand(31240, 1);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/31240/Re_Zero_kara_Hajimeru_Isekai_Seikatsu" target="_blank" class="animetitle" title="Anime Information">
+              <span>Re:Zero kara Hajimeru Isekai Seikatsu</span>
+            </a>
+                                  </td>
+
+                                <td class="td1" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(31240);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval31240">
+                  7
+                </span>
+                </a>
+                <div id="scorediv31240" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,31240);" id="scoretext31240" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(31240);">
+                </div>
+                          </td>
+          
+                                <td class="td1" width="50" align="center">
+              TV
+            </td>
+          
+                                <td class="td1" width="70" align="center">
+                                                          25
+                          </td>
+          
+                                <td class="td1" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow31240">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(31240, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit31240"></div>
+                            <span id="tagLinks31240"></span>
+              <span id="tagRow31240" style="display: none;"></span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more31240" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td2" style="border-left-width: 1px;" width="30" align="center">
+              24
+            </td>
+          
+                              <td class="td2" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/339/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu339" onclick="getExpand(339, 2);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/339/Serial_Experiments_Lain" target="_blank" class="animetitle" title="Anime Information">
+              <span>Serial Experiments Lain</span>
+            </a>
+                                  </td>
+
+                                <td class="td2" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(339);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval339">
+                  9
+                </span>
+                </a>
+                <div id="scorediv339" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,339);" id="scoretext339" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(339);">
+                </div>
+                          </td>
+          
+                                <td class="td2" width="50" align="center">
+              TV
+            </td>
+          
+                                <td class="td2" width="70" align="center">
+                                                          13
+                          </td>
+          
+                                <td class="td2" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow339">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(339, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit339"></div>
+                            <span id="tagLinks339">                  <a href="https://myanimelist.net/animelist/felipisan?status=2&amp;tag=Reassistindo+isso">Reassistindo isso</a>,                   <a href="https://myanimelist.net/animelist/felipisan?status=2&amp;tag=sinceramente">sinceramente</a>,                   <a href="https://myanimelist.net/animelist/felipisan?status=2&amp;tag=eu+acabei+enxergando+algumas+coisas+meio+indesej%C3%A1veis+que+n%C3%A3o+tinha+percebido+de+primeira.">eu acabei enxergando algumas coisas meio indesejáveis que não tinha percebido de primeira.</a></span>
+              <span id="tagRow339" style="display: none;">Reassistindo isso, sinceramente, eu acabei enxergando algumas coisas meio indesejáveis que não tinha percebido de primeira. </span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more339" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td1" style="border-left-width: 1px;" width="30" align="center">
+              25
+            </td>
+          
+                              <td class="td1" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/34240/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu34240" onclick="getExpand(34240, 1);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/34240/Shelter" target="_blank" class="animetitle" title="Anime Information">
+              <span>Shelter</span>
+            </a>
+                                  </td>
+
+                                <td class="td1" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(34240);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval34240">
+                  6
+                </span>
+                </a>
+                <div id="scorediv34240" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,34240);" id="scoretext34240" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(34240);">
+                </div>
+                          </td>
+          
+                                <td class="td1" width="50" align="center">
+              Music
+            </td>
+          
+                                <td class="td1" width="70" align="center">
+                                                          1
+                          </td>
+          
+                                <td class="td1" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow34240">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(34240, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit34240"></div>
+                            <span id="tagLinks34240"></span>
+              <span id="tagRow34240" style="display: none;"></span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more34240" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td2" style="border-left-width: 1px;" width="30" align="center">
+              26
+            </td>
+          
+                              <td class="td2" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/7724/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu7724" onclick="getExpand(7724, 2);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/7724/Shiki" target="_blank" class="animetitle" title="Anime Information">
+              <span>Shiki</span>
+            </a>
+                                  </td>
+
+                                <td class="td2" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(7724);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval7724">
+                  10
+                </span>
+                </a>
+                <div id="scorediv7724" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,7724);" id="scoretext7724" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(7724);">
+                </div>
+                          </td>
+          
+                                <td class="td2" width="50" align="center">
+              TV
+            </td>
+          
+                                <td class="td2" width="70" align="center">
+                                                          22
+                          </td>
+          
+                                <td class="td2" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow7724">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(7724, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit7724"></div>
+                            <span id="tagLinks7724">                  <a href="https://myanimelist.net/animelist/felipisan?status=2&amp;tag=Tipo+Resident+Evil+velho.">Tipo Resident Evil velho.</a></span>
+              <span id="tagRow7724" style="display: none;">Tipo Resident Evil velho.</span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more7724" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td1" style="border-left-width: 1px;" width="30" align="center">
+              27
+            </td>
+          
+                              <td class="td1" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/29786/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu29786" onclick="getExpand(29786, 1);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/29786/Shimoneta_to_Iu_Gainen_ga_Sonzai_Shinai_Taikutsu_na_Sekai" target="_blank" class="animetitle" title="Anime Information">
+              <span>Shimoneta to Iu Gainen ga Sonzai Shinai Taikutsu na Sekai</span>
+            </a>
+                                  </td>
+
+                                <td class="td1" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(29786);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval29786">
+                  5
+                </span>
+                </a>
+                <div id="scorediv29786" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,29786);" id="scoretext29786" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(29786);">
+                </div>
+                          </td>
+          
+                                <td class="td1" width="50" align="center">
+              TV
+            </td>
+          
+                                <td class="td1" width="70" align="center">
+                                                          12
+                          </td>
+          
+                                <td class="td1" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow29786">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(29786, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit29786"></div>
+                            <span id="tagLinks29786">                  <a href="https://myanimelist.net/animelist/felipisan?status=2&amp;tag=Rubens.">Rubens.</a></span>
+              <span id="tagRow29786" style="display: none;">Rubens. </span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more29786" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td2" style="border-left-width: 1px;" width="30" align="center">
+              28
+            </td>
+          
+                              <td class="td2" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/9253/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu9253" onclick="getExpand(9253, 2);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/9253/Steins_Gate" target="_blank" class="animetitle" title="Anime Information">
+              <span>Steins;Gate</span>
+            </a>
+                                  </td>
+
+                                <td class="td2" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(9253);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval9253">
+                  5
+                </span>
+                </a>
+                <div id="scorediv9253" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,9253);" id="scoretext9253" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(9253);">
+                </div>
+                          </td>
+          
+                                <td class="td2" width="50" align="center">
+              TV
+            </td>
+          
+                                <td class="td2" width="70" align="center">
+                                                          24
+                          </td>
+          
+                                <td class="td2" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow9253">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(9253, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit9253"></div>
+                            <span id="tagLinks9253">                  <a href="https://myanimelist.net/animelist/felipisan?status=2&amp;tag=Draminha+n%C3%ADvel+avenida+Brasil.">Draminha nível avenida Brasil.</a></span>
+              <span id="tagRow9253" style="display: none;">Draminha nível avenida Brasil.</span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more9253" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td1" style="border-left-width: 1px;" width="30" align="center">
+              29
+            </td>
+          
+                              <td class="td1" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/16742/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu16742" onclick="getExpand(16742, 1);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/16742/Watashi_ga_Motenai_no_wa_Dou_Kangaetemo_Omaera_ga_Warui" target="_blank" class="animetitle" title="Anime Information">
+              <span>Watashi ga Motenai no wa Dou Kangaetemo Omaera ga Warui!</span>
+            </a>
+                                  </td>
+
+                                <td class="td1" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(16742);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval16742">
+                  6
+                </span>
+                </a>
+                <div id="scorediv16742" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,16742);" id="scoretext16742" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(16742);">
+                </div>
+                          </td>
+          
+                                <td class="td1" width="50" align="center">
+              TV
+            </td>
+          
+                                <td class="td1" width="70" align="center">
+                                                          12
+                          </td>
+          
+                                <td class="td1" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow16742">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(16742, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit16742"></div>
+                            <span id="tagLinks16742"></span>
+              <span id="tagRow16742" style="display: none;"></span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more16742" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td2" style="border-left-width: 1px;" width="30" align="center">
+              30
+            </td>
+          
+                              <td class="td2" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/7785/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu7785" onclick="getExpand(7785, 2);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/7785/Yojouhan_Shinwa_Taikei" target="_blank" class="animetitle" title="Anime Information">
+              <span>Yojouhan Shinwa Taikei</span>
+            </a>
+                                  </td>
+
+                                <td class="td2" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(7785);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval7785">
+                  10
+                </span>
+                </a>
+                <div id="scorediv7785" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,7785);" id="scoretext7785" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(7785);">
+                </div>
+                          </td>
+          
+                                <td class="td2" width="50" align="center">
+              TV
+            </td>
+          
+                                <td class="td2" width="70" align="center">
+                                                          11
+                          </td>
+          
+                                <td class="td2" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow7785">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(7785, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit7785"></div>
+                            <span id="tagLinks7785">                  <a href="https://myanimelist.net/animelist/felipisan?status=2&amp;tag=A+forma+audiovisual+mais+interessante+de+dizer%3A+%22O+seu+sonho+cor-de-rosa+n%C3%A3o+existe.+O+que+existe+na+realidade+%C3%A9+um+pouco+de+todas+as+cores+misturadas%22.+Artisticamente+se+parece+com+a+s%C3%A9rie+Monogatari.">A
+ forma audiovisual mais interessante de dizer: "O seu sonho cor-de-rosa 
+não existe. O que existe na realidade é um pouco de todas as cores 
+misturadas". Artisticamente se parece com a série Monogatari.</a></span>
+              <span id="tagRow7785" style="display: none;">A forma 
+audiovisual mais interessante de dizer: "O seu sonho cor-de-rosa não 
+existe. O que existe na realidade é um pouco de todas as cores 
+misturadas". Artisticamente se parece com a série Monogatari.</span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more7785" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td1" style="border-left-width: 1px;" width="30" align="center">
+              31
+            </td>
+          
+                              <td class="td1" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/35507/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu35507" onclick="getExpand(35507, 1);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/35507/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_TV" target="_blank" class="animetitle" title="Anime Information">
+              <span>Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e (TV)</span>
+            </a>
+                                  </td>
+
+                                <td class="td1" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(35507);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval35507">
+                  6
+                </span>
+                </a>
+                <div id="scorediv35507" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,35507);" id="scoretext35507" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(35507);">
+                </div>
+                          </td>
+          
+                                <td class="td1" width="50" align="center">
+              TV
+            </td>
+          
+                                <td class="td1" width="70" align="center">
+                                                          12
+                          </td>
+          
+                                <td class="td1" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow35507">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(35507, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit35507"></div>
+                            <span id="tagLinks35507"></span>
+              <span id="tagRow35507" style="display: none;"></span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more35507" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+                      
+                  
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+                                <td class="td2" style="border-left-width: 1px;" width="30" align="center">
+              32
+            </td>
+          
+                              <td class="td2" style="border-left-width: 0">
+                      <div style="float: right;">
+              <small>
+                                                  <a href="https://myanimelist.net/ownlist/anime/23283/edit?hideLayout" class="List_LightBox">Edit</a>
+                                -
+                <a href="javascript:void(0);" id="xmenu23283" onclick="getExpand(23283, 2);" title="View More Information">More</a>
+              </small>
+            </div>
+            <a href="https://myanimelist.net/anime/23283/Zankyou_no_Terror" target="_blank" class="animetitle" title="Anime Information">
+              <span>Zankyou no Terror</span>
+            </a>
+                                  </td>
+
+                                <td class="td2" width="45" align="center">
+                                            <a href="javascript:void(0);" onclick="anime_scoreDisplay(23283);" title="Click to bring up a text box to edit your current score">
+                <span id="scoreval23283">
+                  3
+                </span>
+                </a>
+                <div id="scorediv23283" style="display: none;">
+                  <input type="text" onkeydown="anime_checkScoreEnter(event,23283);" id="scoretext23283" size="2">
+                  <input type="button" value="Go" onclick="anime_updateScore(23283);">
+                </div>
+                          </td>
+          
+                                <td class="td2" width="50" align="center">
+              TV
+            </td>
+          
+                                <td class="td2" width="70" align="center">
+                                                          11
+                          </td>
+          
+                                <td class="td2" width="125" align="left">
+                              <div style="float: right;" id="tagChangeRow23283">
+                  <a href="javascript:void(0);" onclick="tag_showEdit(23283, 1);">
+                    <small>edit</small>
+                  </a>
+                </div>
+                <div id="tagRowEdit23283"></div>
+                            <span id="tagLinks23283"></span>
+              <span id="tagRow23283" style="display: none;"></span>
+            </td>
+          
+                    
+                    
+                    
+                    
+                            </tr>
+      </tbody></table>
+      <!-- START HIDDEN -->
+      <div id="more23283" class="hide" style="width:100%px"></div>
+      <!-- // END HIDDEN -->
+
+          
+        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+      <tbody><tr>
+        <td class="category_totals">
+          TV: 27,
+          OVA: 1,
+          Movies: 3,
+          <span title="Specials">Spcl.</span>: 0,
+          Eps: 618,
+          Days: 10.43,
+          Mean Score: 6.7,
+          Score <span title="Deviation">Dev.</span>: -1.46
+        </td>
+      </tr>
+    </tbody></table>
+    <br>
+                    <div id="inlineContent" style="display: none;"></div>
+
+      
+    
+    <div id="copyright" style="text-align: center; margin-top: 10px;">
+      MyAnimeList.net is a property of MyAnimeList, LLC. ©2020 All Rights Reserved.
+    </div>
+  </div>
+
+  <script src="felipisan's%20Anime%20List%20-%20MyAnimeList.net_arquivos/myanimelist.js" async="async"></script>
+<script src="felipisan's%20Anime%20List%20-%20MyAnimeList.net_arquivos/gpt.js" async="async"></script>
+<script>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+</script>
+
+<script async="">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga')
+
+  ga('create', 'UA-369102-1', 'auto')
+  ga('set', 'anonymizeIp', true)
+  ga('require', 'linkid') // Enhanced Link Attribution
+  ga('send', 'pageview')
+</script>
+  <script>
+window.onscroll = function(e){
+    const scrollThreshold = 50;
+    if (window.pageYOffset >= scrollThreshold) {
+        [].forEach.call(document.querySelectorAll('.no-ad'), function(ad) {
+            let t_height = ad.offsetHeight;
+            let offsetY = ad.getBoundingClientRect().top;
+            let screenHeight = window.outerHeight;
+            let t_position = offsetY - screenHeight;
+            if(-screenHeight<=(t_position　+　t_height) && t_position<0) {
+                ad.className = 'ad-tag';
+                (deployads = window.deployads || []).push({});
+            }
+        });
+    }
+}
+var timer = 0;
+window.onresize = function(e){
+    if (timer > 0) {
+        clearTimeout(timer);
+    }
+
+    timer = setTimeout(function () {
+        console.log('window resized');
+        [].forEach.call(document.querySelectorAll('.ad-tag'), function(ad) {
+            ad.className = 'no-ad';
+            (deployads = window.deployads || []).push({});
+        });
+        [].forEach.call(document.querySelectorAll('.no-ad'), function(ad) {
+            ad.className = 'ad-tag';
+            (deployads = window.deployads || []).push({});
+        });
+    }, 200);
+}
+</script><script src="felipisan's%20Anime%20List%20-%20MyAnimeList.net_arquivos/api.js" async="async"></script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WL4QW3G');</script><script type="text/javascript">
+    window.MAL.magia = "06410c4e6b2518e9add8f6df0ccb2da2876bb8c980aacb43a8dcaa8153c0f92c";
+  window.MAL.madoka = "hZrDKm9k6FVRnqd3i%=K";
+
+  window.MAL.SLVK = "g4OvMLVOmEI3J8u7dt8f8+mAuualsqCo";
+  window.MAL.CDN_URL = "https://cdn.myanimelist.net";
+
+  window.MAL.CURRENT_TUTORIAL_STEP_ID = null;
+  window.MAL.USER_NAME = "felipisan"
+  window.MAL.FACEBOOK.APP_ID = "360769957454434"
+  window.MAL.FACEBOOK.API_VERSION = "v2.12"
+</script>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WL4QW3G" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancy-bg" id="fancy-bg-n"></div><div class="fancy-bg" id="fancy-bg-ne"></div><div class="fancy-bg" id="fancy-bg-e"></div><div class="fancy-bg" id="fancy-bg-se"></div><div class="fancy-bg" id="fancy-bg-s"></div><div class="fancy-bg" id="fancy-bg-sw"></div><div class="fancy-bg" id="fancy-bg-w"></div><div class="fancy-bg" id="fancy-bg-nw"></div><div id="fancybox-inner"></div><a id="fancybox-close"></a><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><div class="gdpr-modal-ad"></div>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","403179503706622");fbq("set","agent","tmgoogletagmanager","403179503706622");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=403179503706622&amp;ev=PageView&amp;noscript=1"></noscript>
+</body></html>
